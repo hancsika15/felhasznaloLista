@@ -1,0 +1,92 @@
+.color-1 {color: #179b97;}
+.color-2 {color: #6ec1be;}
+.color-3 {color: #c16e71;}
+.color-4 {color: #9b171b;}
+.color-5 {color: #000000;}
+.color-6 {color: #ffffff;}
+
+:root{
+    --container-bgc: #9b171b;
+    --background-color:#179b97;
+
+    --button-delete: #c16e71;
+    --button-add: #6ec1be;
+
+    --font-color:#000000;  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    max-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+.container {
+    box-shadow: 0 0 10px black;
+    border-radius: 2em;
+    padding: 20px;
+    width: 80%;
+    background-color: white;
+}
+
+.container h2 {
+    text-align: center;
+    padding: 1em;
+}
+
+.container .list{
+    max-height: 70%;
+    overflow: scroll;
+}
+
+.container .list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    list-style: none;
+    border-radius: 2em;
+    box-shadow: 0 0 10px gray;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    height: fit-content;
+}
+
+.container .list ul li button {
+    float: right;
+    margin: 5px;
+    background-color: var(--button-delete);
+    color: white;
+}
+
+.addNew {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.addNew p {
+    margin: 0;
+}
+
+.addNew button{
+    background-color: var(--button-add);
+}
+
+.addNew input,
+.addNew button {
+    padding: 5px;
+    margin: 5px;
+}
